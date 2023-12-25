@@ -21,7 +21,7 @@ module.exports.signIn = (req, res) => {
         });
     }
     return res.render("user_sign_in", {
-        title: "Placement cell | Sign In",
+        title: "Url Shortener | Sign In",
     });
 };
 
@@ -36,7 +36,7 @@ module.exports.signUp = (req, res) => {
         });
     }
     return res.render("user_sign_up", {
-        title: "Placement cell | Sign Up",
+        title: "Url Shortener | Sign Up",
     });
 };
 
