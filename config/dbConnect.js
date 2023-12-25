@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-const DB_URL ="mongodb://localhost:27017/url";
-const dbConnect = async () => {
-    mongoose.connect(DB_URL).then((data) => {
+
+const dbConnect = () => {
+    mongoose.connect(process.env.DB_URL).then((data) => {
         console.log(`Mongodb connected with server: ${data.connection.host}`);
     });
 
